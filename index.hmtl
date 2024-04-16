@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trabalho</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>To do list</h1>
+    <input type="text" id="taskInput" placeholder="Insira uma Tarefa">
+    <button onclick="adicionarTarefa()">Adicionar</button>
+    <button onclick="excluirLista()">Excluir Lista</button><br>
+    <input type="checkbox" id="ocultarConcluidas" onchange="alternarOcultarConcluidas()">
+    <label for="ocultarConcluidas">Ocultar concluídos</label>
+    <ul id="listaTarefas"></ul>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
